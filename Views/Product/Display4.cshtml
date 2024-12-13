@@ -1,0 +1,29 @@
+﻿@model IEnumerable<MVC_CRUD.Models.Product>
+@{
+    ViewData["Title"] = "Display4";
+}
+
+<h1>Display4</h1>
+<table>
+    <tr>
+        <th> Pcode </th>
+        <th> Name </th>
+        <th> Quantity_stock </th>
+        <th> Details</th>
+        <th>Price</th>
+    </tr>
+    @{
+        foreach (var products in Model)
+
+        {
+            <tr>
+                <td>  @products.Pcode </td>
+                <td>  @products.Name </td>
+                <td>  @products.Quantity_stock </td>
+                <td>  @products.Details </td>
+                <td>  @products.Price </td>
+            </tr>
+        }
+    }
+</table>
+

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Display2";
+}
+
+<h1>Display2</h1>
+
+@{
+    foreach (var Details in ViewBag.Products)
+    {
+        @Details.Pcode
+        @Details.Name
+        @Details.Quantity_stock
+        @Details.Details
+        @Details.Price
+        <br />
+    }
+}
